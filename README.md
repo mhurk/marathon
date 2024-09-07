@@ -1,18 +1,17 @@
 # Marathon
-Simulation of distribution of runners on a marathon course
+Simulation of distribution of runners on a marathon course.
 
-What is does and does not
-- Use startwaves
-- Uses a normal distribution for the pace, this is not correct. Real data needed
-- Assumes pace distribution is equal for all start waves. This is not correct, faster runners will start in earlier waves.
-- Assumnes constant pace during the entire race. 
+What is does and does not:
+- Uses startwaves, total number of runners equally distributed over waves.
+- Uses a normal distribution for pace, this is not correct as it is usually a bit skewed toward faster runners. Real data is needed.
+- Assumes pace distribution is the same for all start waves. This is not correct, faster runners will start in earlier waves.
+- Assumnes constant pace during the entire race.
+- Generates animation of distribution over runners over the course
+- 
+_Future improvement_
+- Create a heatmap of a course, based on gpx and number of runners on a location.
 
-- generates animation of distribution over runners over the course
-- Does not create a heatmap of a course (that would be cool)
-
-![image](images/marathon_wave_simulation_animation.mp4)
-
-
+Screenshot from animation:
 ![image](https://github.com/user-attachments/assets/a6059428-960b-4ee8-9cd6-e2f3ceae6930)
 
 
