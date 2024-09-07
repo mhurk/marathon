@@ -53,4 +53,4 @@ def update(frame):
 
 # Create the animation
 ani = animation.FuncAnimation(fig, update, frames=len(time_steps), repeat=False)
-ani.save('.\images\marathon_wave_simulation_animation.mp4', writer='ffmpeg', fps=10)
+ani.save('./images/marathon_wave_simulation_animation.mp4', writer='ffmpeg', fps=10)
