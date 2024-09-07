@@ -7,7 +7,7 @@ What is does and does not:
 - Assumes pace distribution is the same for all start waves. This is not correct, faster runners will start in earlier waves.
 - Assumnes constant pace during the entire race.
 - Generates animation of distribution over runners over the course
-- 
+ 
 _Future improvement_
 - Create a heatmap of a course, based on gpx and number of runners on a location.
 
