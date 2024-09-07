@@ -5,6 +5,7 @@ _What is does and does not_
 - Uses startwaves, total number of runners equally distributed over waves.
 - Uses a normal distribution for pace, this is not correct as it is usually a bit skewed toward faster runners. Real data is needed.
 - Assumes pace distribution is the same for all start waves. This is not correct, faster runners will start in earlier waves.
+- Assumes all runners starts simultaneously, per wave. 
 - Assumnes constant pace during the entire race.
 - Generates animation of distribution over runners over the course
  
