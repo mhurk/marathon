@@ -10,6 +10,6 @@ What is does and does not
 - generates animation of distribution over runners over the course
 - Does not create a heatmap of a course (that would be cool)
 
-![animation](images/marathon_wave_simulation_animation.mp4)
+
 
 
