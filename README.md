@@ -9,7 +9,12 @@ _What is does and does not_
 - Assumnes constant pace during the entire race.
 - Generates animation of distribution over runners over the course
  
-_Future improvement_
+_Future improvement / to-do list_
+- combine half and full marathon (same graph or seperate? Depending on course overlap). Where are the overlap areas for Eindhoven 2024?
+- Wave starts not on one moment but n per secnond (does this matter a lot?).
+- Correct number of runners per wave (currently the same).
+- Correct distribution of end times (mean pace).
+- Correct pace distribution over time (currently assumes constant pace). Based on old data? There is a list of all times with pace per segment of a few km.
 - Create a heatmap of a course, based on gpx and number of runners on a location.
 
 Screenshot from animation:
