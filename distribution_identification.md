@@ -27,4 +27,8 @@ Visually it looks like this, on the x-axis the chiptime in minutes is given.
 
 
 ## Mean pace and variation
-- todo
+
+From the same dataset the mean pace (again, chiptime) and standard deviation is calculated.
+
+- mean: 229.29 minutes (03:49:17)
+- standard deviation: 35.21 minutes (00:35:12)
