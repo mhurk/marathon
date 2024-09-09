@@ -25,8 +25,6 @@ qqcomp(list(fitW, fitg, fitln, fitnorm), legendtext=c("Weibull", "gamma", "logno
 ppcomp(list(fitW, fitg, fitln, fitnorm), legendtext=c("Weibull", "gamma", "lognormal", "normal"))
 gofstat(list(fitW, fitg, fitln, fitnorm), fitnames=c("Weibull", "gamma", "lognormal", "normal"))
 
-#conclusion: Gamma fits best (lowest number)
-
 # The gamma distribution has the lowest values across all goodness-of-fit statistics (KS, CvM, AD) 
 # and criteria (AIC, BIC), suggesting it is the best fit for your data compared to the Weibull and lognormal distributions.
 
