@@ -1,8 +1,6 @@
 library(fitdistrplus)
 library(lubridate)
 
-setwd("//BigStation/data/Programming/Marathon_pace/information")
-
 results <- readxl::read_excel("Results-marathon-eindhoven-2017.xlsx")
 
 ChipTime <- parse_date_time(results$Chiptime, orders = "%Y-%m-%d %H:%M:%S")
