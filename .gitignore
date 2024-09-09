@@ -1,0 +1,11 @@
+# Visual Studio Code
+.vscode/**
+*.code-workspace
+
+# R files
+.Rdata
+.Rhistory
+
+# Folders
+/temp/**
+
