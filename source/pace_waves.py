@@ -6,7 +6,7 @@ import matplotlib.animation as animation
 # Simulation parameters
 num_runners = 1000
 race_distance = 42.2
-random_paces = np.random.normal(5.5, 0.67, num_runners)  # Random pace in minutes per km, normal distribution assumed
+random_paces = np.random.normal(5.434008, 0.834381, num_runners)  # Random pace in minutes per km, normal distribution assumed
 max_time = 360  # Maximum time in minutes (180 for half marathon, 360 for full)
 time_steps = np.arange(0, max_time + 1)
 
