@@ -28,3 +28,11 @@ gofstat(list(fitW, fitg, fitln, fitnorm), fitnames=c("Weibull", "gamma", "lognor
 # The gamma distribution has the lowest values across all goodness-of-fit statistics (KS, CvM, AD) 
 # and criteria (AIC, BIC), suggesting it is the best fit for your data compared to the Weibull and lognormal distributions.
 
+meanPace <- mean(ChipMinute)
+sdPace <- sd(ChipMinute)
+
+paste("mean pace:", sprintf("%.02d:%.02d:%.02d", meanPace %/% 60, round(meanPace %% 60), round(meanPace%%1*60)), sep = " ")
+paste("standard deviation:", sprintf("%.02d:%.02d:%.02d", sdPace %/% 60, round(sdPace %% 60), round(sdPace%%1*60)), sep = " ")
+
+
+
