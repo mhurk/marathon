@@ -4,7 +4,7 @@ Simulation of distribution of runners on a marathon course.
 _What it does and does not_
 - Uses startwaves, total number of runners equally distributed over waves.
 - ~~Uses a normal distribution for pace, this is not correct as it is usually a bit skewed toward faster runners. Real data is needed.~~
-- Normal distribution or gamma distribution is okay to use, based on the 2017 marathon data. (see distribution_identification.md)
+- Normal distribution or gamma distribution is okay to use, based on the 2017 marathon data. (see [distribution_identification.md](https://github.com/mhurk/marathon/blob/main/distribution_identification.md))
 - Assumes pace distribution is the same for all start waves. This is not correct, faster runners will start in earlier waves.
 - Assumes all runners starts simultaneously, per wave. 
 - Assumnes constant pace during the entire race.
