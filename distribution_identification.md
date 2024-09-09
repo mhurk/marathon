@@ -1,6 +1,6 @@
 # Data distribution
   
-Which distribution of the data sould we use for generating random data?
+Which distribution of the data sould we use for generating random data? Calculations [here:](https://github.com/mhurk/marathon/blob/main/information/distribution.R)
 
 Based on the chiptime from the marathon in Eindhoven in 2017 (for this marathon the data was easily downloaded without the need for a scraper or other tricks) the following results were found:
 
