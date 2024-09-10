@@ -84,4 +84,4 @@ ani.save('./images/marathon_wave_simulation_animation_finishers.mp4', writer='ff
 
 # Store last frame
 update(len(time_steps) - 1)  # Update to the last frame
-plt.savefig('./images/marathon_wave_simulation_animation_finishers_last_frame.png', dpi=300)
+plt.savefig('./images/marathon_wave_simulation_finishers_last_frame.png', dpi=300)
