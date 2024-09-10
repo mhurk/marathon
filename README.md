@@ -1,4 +1,4 @@
-# Marathon
+# Marathon Simulation
 Simulation of distribution of runners on a marathon course.
 
 _What it does and does not_
