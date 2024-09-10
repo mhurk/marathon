@@ -30,5 +30,10 @@ Visually it looks like this, on the x-axis the chiptime in minutes is given.
 
 From the same dataset the mean pace (again, chiptime) and standard deviation is calculated.
 
-- mean: 229.29 minutes (03:49:17)
+- mean marathon time: 229.29 minutes (03:49:17)
 - standard deviation: 35.21 minutes (00:35:12)
+
+Mean values as input for the simulation:
+
+- Mean pace: 5.434008 minutes/km (05:26)
+- Standard deviation: 0.834381
