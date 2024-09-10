@@ -12,7 +12,8 @@ _What it does and does not_
 - Generates animation of distribution over runners over the course
  
 _Future improvement / to-do list_
-- combine half and full marathon (same graph or seperate? Depending on course overlap). Where are the overlap areas for Eindhoven 2024?
+- Combine half and full marathon (same graph or seperate? Depending on course overlap).
+    - Courses meet at around 39.25 km for full and 18.35 for the half marathon.
 - Wave starts not on one moment but n per secnond (does this matter a lot?).
 - Correct number of runners per wave (currently the same).
 - Create a heatmap of a course, based on gpx and number of runners on a location.
@@ -24,6 +25,7 @@ Screenshot from animation:
 ![image](https://github.com/user-attachments/assets/a6059428-960b-4ee8-9cd6-e2f3ceae6930)
 
 Screenshot from runners over time:
+![image](https://github.com/user-attachments/assets/b4d1e4df-b8dc-48a1-8020-6c0b60c25d5a)
 
 
 
