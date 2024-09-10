@@ -12,6 +12,7 @@ _What it does and does not_
  
 _Future improvement / to-do list_
 - combine half and full marathon (same graph or seperate? Depending on course overlap). Where are the overlap areas for Eindhoven 2024?
+- Show number of runners crossing the finish line as function of time.
 - Wave starts not on one moment but n per secnond (does this matter a lot?).
 - Correct number of runners per wave (currently the same).
 - Correct distribution of end times (mean pace).
