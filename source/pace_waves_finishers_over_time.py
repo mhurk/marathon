@@ -71,7 +71,7 @@ def update(frame):
 
     # Plot the number of finishers over time
     ax2.plot(time_steps[:len(finishers_over_time)], finishers_over_time, color='purple')
-    ax2.set_title('Cumulative Number of finishers over time')
+    ax2.set_title('Cumulative number of finishers over time')
     ax2.set_xlabel('Time (minutes)')
     ax2.set_ylabel('Number of finishers')
     ax2.set_xlim([0, max_time])
