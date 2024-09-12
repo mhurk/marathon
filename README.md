@@ -9,7 +9,7 @@ _What it does and does not_
 - [x] Assumnes constant pace during the entire race.
 - [x] Generates animation of distribution over runners over the course
 - [x] Show number of runners crossing the finish line as function of time.
-- [x] [Animated heatmap of runners on the course](https://github.com/mhurk/marathon/blob/main/images/runner_heatmap_with_time.html) (this is really cool!)
+- [x] Animated heatmap of runners on the course (this is really cool!)
 - [ ] Combine half and full marathon (seperate graphs with match x-asis and a combined graph. Depending on course overlap).
     - Courses meet at around 39.25 km for full and 18.35 for the half marathon.
 - [ ] Wave starts not on one moment but n per second (probably does not matter a lot, central limit theorem?).
