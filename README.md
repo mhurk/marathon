@@ -18,11 +18,12 @@ Simulation of distribution of runners on a marathon course.
 - [ ] Correct number of runners per wave (currently the same).
 - [ ] _Minor improvement_: Correct pace distribution over time (currently assumes constant pace). Based on old data? There is a list of all times with pace per segment of a few km.
 
-## Animation / moving histogram (screenshot):
-![image](https://github.com/user-attachments/assets/a6059428-960b-4ee8-9cd6-e2f3ceae6930)
+## Animation / moving histogram (screenshot from full marathon):
+![image](https://github.com/user-attachments/assets/5e833fae-7ec2-4cf4-b7b3-4a5f78844f13)
 
-## Runners over time:
-![image](https://github.com/user-attachments/assets/b4d1e4df-b8dc-48a1-8020-6c0b60c25d5a)
+## Runners over time (half marathon):
+![image](https://github.com/user-attachments/assets/ad15bbc5-cbda-4503-8c41-340ea5fefd1e)
+
 
 ## Screenshot from animated heatmap:
 ![image](https://github.com/user-attachments/assets/65b3fbeb-0d56-4023-ba01-44e63a08fea0)
