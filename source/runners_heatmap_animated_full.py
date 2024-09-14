@@ -42,7 +42,7 @@ def map_distance_to_coords(distances, route_coords, default_start_coord):
     return valid_runner_coords
 
 # Create a single HTML heatmap with time-based animation using HeatMapWithTime
-def create_heatmap_with_time(runner_coords_over_time, route_coords, bounds, output_html='../images/runner_heatmap_animated_full.html'):
+def create_heatmap_with_time(runner_coords_over_time, route_coords, bounds, output_html='../images/heatmap_animated_full.html'):
   
     # Initialize the map centered around the bounding box center
     center_lat = (bounds[0][0] + bounds[1][0]) / 2
