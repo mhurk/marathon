@@ -6,6 +6,9 @@
 .Rdata
 .Rhistory
 
+# Miscellaneous files
+*/Thumbs.db
+
 # Folders
 /temp/**
 
