@@ -15,14 +15,13 @@ Simulation of distribution of runners on a marathon course.
       - Half marathon has 5 start waves at 11:30, 11:45, 12:00, 12:15 en 12:30 (total 17500 runners). Expected around 250 per minute. Modelleing can be either 1 big wave with 250/minute or 5 waves with 3500 runners each.
       - Full marathon has 1 start wave which lasts around 10 minutes, starting at 10:00 (10:00 - 10:10), 6000 runners.
 - [ ] Wave starts not on one moment but n per second (probably does not matter a lot, central limit theorem?).
-- [x] Correct number of runners per wave. -> distributed evenly.
+- [x] Correct number of runners per wave -> distributed evenly.
 - [ ] _Minor improvement_: Correct pace distribution over time (currently assumes constant pace). Based on old data? There is a list of all times with pace per segment of a few km.
 
 I estimate the number of finishers at __around 260 per minute__ during the hour after 200 minutes from the start of the full marathon. So for a start at 10:00 this translate to 260 runners per minute from 13:20 - 14:20.
 
-## Animation / moving histogram:
+## Moving histogram:
 ![image](https://github.com/user-attachments/assets/ff8ece7f-6263-408d-9b90-94c2495067ac)
-
 
 ## Screenshot from animated heatmap:
 ![image](https://github.com/user-attachments/assets/65b3fbeb-0d56-4023-ba01-44e63a08fea0)
