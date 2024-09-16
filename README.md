@@ -18,8 +18,11 @@ Simulation of distribution of runners on a marathon course.
 - [x] Correct number of runners per wave (currently the same). -> distributed evenly.
 - [ ] _Minor improvement_: Correct pace distribution over time (currently assumes constant pace). Based on old data? There is a list of all times with pace per segment of a few km.
 
+I estimate the number of finishers at __around 260 per minute__ during the hour after 200 minutes from the start of the full marathon. So for a start at 10:00 this translate to 260 runners per minute from 13:20 - 14:20.
+
 ## Animation / moving histogram:
-![image](https://github.com/user-attachments/assets/0cf7b6e7-f2d8-4ec8-8df0-8634b06ec873)
+![image](https://github.com/user-attachments/assets/ff8ece7f-6263-408d-9b90-94c2495067ac)
+
 
 ## Screenshot from animated heatmap:
 ![image](https://github.com/user-attachments/assets/65b3fbeb-0d56-4023-ba01-44e63a08fea0)
