@@ -150,7 +150,9 @@ def update(frame):
     ax5.set_ylabel('Number of finishers')
     ax5.set_xlim([0, max_time])
     ax5.set_ylim([0, num_runners_half + num_runners_full])
-    ax5.grid(True)
+    ax5.grid(True, color='grey', alpha=0.2, which='minor')
+    ax5.grid(True, color='grey', alpha=0.4, which='major')
+    ax5.minorticks_on()
 
     plt.tight_layout()
 
