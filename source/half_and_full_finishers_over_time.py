@@ -59,7 +59,7 @@ finishers_over_time_full = [0]
 finishers_over_time_half = [0]
 finishers_over_time_combined = [0]
 
-titleFont = 10
+titleFont = 9
 
 # Function to update the animation for each time step
 def update(frame):
@@ -137,14 +137,14 @@ def update(frame):
     ax4.plot(time_steps[:len(finishers_over_time_half)], finishers_over_time_half, color='purple')
     ax4.set_title('Cumulative finishers - half marathon',
                   fontsize = titleFont)
-    ax4.set_xlabel('Time (minutes)')
+    ax4.set_xlabel('Time (minutes) after start full')
     ax4.set_ylabel('Number of finishers')
     ax4.set_xlim([0, max_time])
     ax4.set_ylim([0, num_runners_half])
     ax4.grid(True)
       
     # Plot of number of fnishers half and full marathon
-    ax5.plot(time_steps[:len(finishers_over_time_full)], finishers_over_time_combined, color='purple')
+    ax5.plot(time_steps[:len(finishers_over_time_full)], finishers_over_time_combined, color='green')
     ax5.set_title('Cumulative finishers - full and half marathon')
     ax5.set_xlabel('Time (minutes)')
     ax5.set_ylabel('Number of finishers')
