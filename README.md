@@ -19,7 +19,7 @@ Simulation of distribution of runners on a marathon course.
 - [ ] _Minor improvement_: Correct pace distribution over time (currently assumes constant pace). Based on old data? There is a list of all times with pace per segment of a few km.
 
 ## Animation / moving histogram:
-![image](https://github.com/user-attachments/assets/6dcafd7b-167e-4e7f-adbc-aed856c7d462)
+![image](https://github.com/user-attachments/assets/0cf7b6e7-f2d8-4ec8-8df0-8634b06ec873)
 
 ## Screenshot from animated heatmap:
 ![image](https://github.com/user-attachments/assets/65b3fbeb-0d56-4023-ba01-44e63a08fea0)
