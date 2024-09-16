@@ -83,12 +83,12 @@ def create_heatmap_with_time(runner_coords_over_time, route_coords, bounds, outp
     # more settings and details: https://github.com/python-visualization/folium/blob/main/folium/plugins/heat_map_withtime.py
     HeatMapWithTime(
         heatmap_data,
-        min_speed=2.0,
-        radius=12,          
-        auto_play=True,
-        max_opacity=0.7,    
-        min_opacity=0.1,    
-        use_local_extrema=True  
+        min_speed = 2.0,
+        radius = 12,          
+        auto_play = True,
+        max_opacity = 0.7,    
+        min_opacity = 0.1,    
+        use_local_extrema = True  
     ).add_to(m)
 
     # Save the map to an HTML file
