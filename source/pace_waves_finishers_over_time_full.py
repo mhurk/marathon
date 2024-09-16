@@ -36,7 +36,6 @@ def update(frame):
     ax2.clear()
     time_elapsed = time_steps[frame]
     
-    all_distances = []
     total_finishers = 0
     
     # time_elapsed = time_steps[frame]
@@ -70,7 +69,7 @@ def update(frame):
     ax1.grid(True)
 
     # Plot the number of finishers over time
-    ax2.plot(time_steps[:len(finishers_over_time)], finishers_over_time, color='purple')
+    ax2.plot(time_steps[:len(finishers_over_time)], finishers_over_time, color='blue')
     ax2.set_title('Cumulative number of finishers over time')
     ax2.set_xlabel('Time (minutes)')
     ax2.set_ylabel('Number of finishers')

@@ -36,7 +36,6 @@ def update(frame):
     ax2.clear()
     time_elapsed = time_steps[frame]
     
-    all_distances = []
     total_finishers = 0
     
     # time_elapsed = time_steps[frame]
@@ -61,7 +60,7 @@ def update(frame):
         finishers_over_time[frame] = total_finishers
     
     # Plot the updated distribution
-    ax1.hist(distances, bins=50, color='blue', alpha=0.6)
+    ax1.hist(distances, bins=50, color='purple', alpha=0.6)
     ax1.set_title(f'Distribution of runners at {time_elapsed} minutes')
     ax1.set_xlabel('Distance covered (km)')
     ax1.set_ylabel('Number of runners')
