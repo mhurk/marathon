@@ -20,14 +20,28 @@ Simulation of distribution of runners on a marathon course.
 - [x] Correct number of runners per wave -> distributed evenly.
 - [ ] _Minor improvement_: Correct pace distribution over time (currently assumes constant pace). Based on old data? There is a list of all times with pace per segment of a few km.
 
-I estimate the number of finishers at __around 260 per minute__ during the hour after 200 minutes from the start of the full marathon. So for a start at 10:00 this translate to 260 runners per minute from 13:20 - 14:20.
+I estimate the number of finishers at **around 260 per minute** during the hour after 200 minutes from the start of the full marathon. So for a start at 10:00 this translate to 260 runners per minute from 13:20 - 14:20.
 
-## Moving histogram:
+## Moving histogram
 ![image](https://github.com/user-attachments/assets/ff8ece7f-6263-408d-9b90-94c2495067ac)
 
-## Screenshot from animated heatmap:
+## Screenshot from animated heatmap
 ![image](https://github.com/user-attachments/assets/65b3fbeb-0d56-4023-ba01-44e63a08fea0)
 
-## Screenshot from animated heatmap half and full marathon combined:
+## Screenshot from animated heatmap half and full marathon combined
 Number of runners in the simulation is changed to 10% of actual starts to limit the file size. With all runners a >350 Mb html file is created. That runs remarkable smooth on a browser but adds no value to the visualization.
 ![image](https://github.com/user-attachments/assets/fe1af19e-4ab1-4f4e-a8a3-887d0a762ef6)
+
+# Reference marathon
+As 260 finishers per minute seems quite a lot to me I made a reference (as suggested by @CanCakiroglu) for a previous marathon in Eindhoven. In 2023 the start for the full marathon was at 10:00 and the half started at 14:00 in the afternoon. I don't exactly know the number of runners for that edition but I used the same numbers as for the 2024 edition. Below graph shows the finishers over time. In the steepest part the number of runners crossing the finishline is **approximately 145 per minute**. Significantly lower that the predicted number for the 2024 edition.
+
+<img src="https://github.com/user-attachments/assets/1eb5fd93-c4e7-48e0-98a8-33b3bc8e909b" height="400">
+
+# Getting started
+Why is this at the end you may ask? Well, that seems a nice place.
+
+Run ```pip install -r requirements.txt``` to retrieve the packages I used in the simulation.
+
+In R I used R 4.3.3. with lubridate_1.9.3 and fitdistrplus_1.2-1
+
+
