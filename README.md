@@ -42,6 +42,6 @@ Why is this at the end you may ask? Well, that seems a nice place.
 
 Run ```pip install -r requirements.txt``` to retrieve the packages used in the simulation.
 
-In R 4.3.3. was used with lubridate_1.9.3 and fitdistrplus_1.2-1 for determining the distribution, the mean pace, and the standard deviation.
+R 4.3.3. was used with lubridate_1.9.3 and fitdistrplus_1.2-1 for determining the distribution, the mean pace, and the standard deviation.
 
 
