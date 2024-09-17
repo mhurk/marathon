@@ -16,6 +16,7 @@ Simulation of distribution of runners on a marathon course.
       - Full marathon has 1 start wave which lasts around 10 minutes, starting at 10:00 (10:00 - 10:10), 6000 runners.
 - [ ] Overlapping sections in heatmap don't show up brighter. That could be improved. Currently there is no interaction between the two heatmaps, jus plotted together on the map.
 - [ ] Wave starts not on one moment but n per second (probably does not matter a lot, central limit theorem?).
+- [ ] Add 2023 for comparison / sanity check
 - [x] Correct number of runners per wave -> distributed evenly.
 - [ ] _Minor improvement_: Correct pace distribution over time (currently assumes constant pace). Based on old data? There is a list of all times with pace per segment of a few km.
 
