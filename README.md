@@ -40,8 +40,8 @@ As 260 finishers per minute seems quite a lot to me I made a reference (as sugge
 # Getting started
 Why is this at the end you may ask? Well, that seems a nice place.
 
-Run ```pip install -r requirements.txt``` to retrieve the packages I used in the simulation.
+Run ```pip install -r requirements.txt``` to retrieve the packages used in the simulation.
 
-In R I used R 4.3.3. with lubridate_1.9.3 and fitdistrplus_1.2-1
+In R 4.3.3. was used with lubridate_1.9.3 and fitdistrplus_1.2-1 for determining the distribution, the mean pace, and the standard deviation.
 
 
