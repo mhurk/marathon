@@ -1,5 +1,5 @@
 # Marathon Simulation
-Simulation of distribution of runners on a marathon course.
+Simulation of distribution of runners on a marathon course. Simulated for full and half marathon only, not for other distances like 1/4 marathon or business run.
 
 - Uses start waves, total number of runners equally distributed over waves.
 - Normal distribution or gamma distribution is okay to use, based on the 2017 marathon data. (see [distribution_identification.md](https://github.com/mhurk/marathon/blob/main/distribution_identification.md))
@@ -22,20 +22,25 @@ Simulation of distribution of runners on a marathon course.
 
 I estimate the number of finishers at **around 260 per minute** during the hour after 200 minutes from the start of the full marathon. So for a start at 10:00 this translate to 260 runners per minute from 13:20 - 14:20.
 
-## Moving histogram
+## Moving histogram and finishers over time
 ![image](https://github.com/user-attachments/assets/ff8ece7f-6263-408d-9b90-94c2495067ac)
+<sub>Screenshot from moving histogram (top left) and the number of finishers as function of time for full and half marathon, and for the sum of these distances.</sub>
 
-## Screenshot from animated heatmap
+## Animated heatmap
 ![image](https://github.com/user-attachments/assets/65b3fbeb-0d56-4023-ba01-44e63a08fea0)
+<sub>Screenshot from an animated heatmap for full distance.</sub>
 
-## Screenshot from animated heatmap half and full marathon combined
+## Animated heatmap half and full marathon combined
 Number of runners in the simulation is changed to 10% of actual starts to limit the file size. With all runners a >350 Mb html file is created. That runs remarkable smooth on a browser but adds no value to the visualization.
 ![image](https://github.com/user-attachments/assets/fe1af19e-4ab1-4f4e-a8a3-887d0a762ef6)
+<sub>Screenshot from an animated heatmap for both distances</sub>
 
 # Reference marathon
 As 260 finishers per minute seems quite a lot to me I made a reference (as suggested by @CanCakiroglu) for a previous marathon in Eindhoven. In 2023 the start for the full marathon was at 10:00 and the half started at 14:00 in the afternoon. I don't exactly know the number of runners for that edition but I used the same numbers as for the 2024 edition. Below graph shows the finishers over time. In the steepest part the number of runners crossing the finishline is **approximately 145 per minute**. Significantly lower that the predicted number for the 2024 edition.
 
 <img src="https://github.com/user-attachments/assets/1eb5fd93-c4e7-48e0-98a8-33b3bc8e909b" height="400">
+
+<sub>Number of finishers over time for the start schedule as used in 2023.</sub>
 
 # Getting started
 Why is this at the end you may ask? Well, that seems a nice place.
