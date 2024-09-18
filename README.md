@@ -18,6 +18,7 @@ Simulation of distribution of runners on a marathon course. Simulated for full a
 - [ ] Wave starts not on one moment but n per second (probably does not matter a lot, central limit theorem?).
 - [x] Add 2023 for comparison / sanity check
 - [x] Correct number of runners per wave -> distributed evenly.
+- [ ] Add growth rate and FWHM to identify maximum and the peak period.
 - [ ] _Minor improvement_: Correct pace distribution over time (currently assumes constant pace). Based on old data? There is a list of all times with pace per segment of a few km.
 
 I estimate the number of finishers at **around 260 per minute** during the hour after 200 minutes from the start of the full marathon. So for a start at 10:00 this translate to 260 runners per minute from 13:20 - 14:20.
