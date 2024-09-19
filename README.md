@@ -18,6 +18,7 @@ Simulation of distribution of runners on a marathon course. Simulated for full a
 - [ ] Wave starts not on one moment but n per second (probably does not matter a lot, central limit theorem?).
 - [x] Add 2023 for comparison / sanity check
 - [x] Correct number of runners per wave -> distributed evenly.
+- [x] Add growth rate and FWHM to identify maximum and the peak period.
 - [ ] _Minor improvement_: Correct pace distribution over time (currently assumes constant pace). Based on old data? There is a list of all times with pace per segment of a few km.
 
 I estimate the number of finishers at **around 260 per minute** during the hour after 200 minutes from the start of the full marathon. So for a start at 10:00 this translate to 260 runners per minute from 13:20 - 14:20.
@@ -42,11 +43,44 @@ As 260 finishers per minute seems quite a lot to me I made a reference (as sugge
 
 <sub>Number of finishers over time for the start schedule as used in 2023.</sub>
 
+# Comparison
+I order to compare the number of finishers over time the growth rate, maximum groth rate, and Full Wifhth at Half Maximum (FWHM) was calcualted. The growth rate essentially tells how fast runners are finishing at any given point in time. The peak growth rate shows the maximum at which runners are crossing the finish line. FWHM shows the time window over which the majority of the runners are finishing, helping race organizers understand congestion patterns at the finish line.
+
+Below graphs show this information for a reference marathon where the half marathon starts 4 hours (240 minutes) after the full marathon. In the 2024 marathon the start between full and half is 90 minutes. 
+For both editions calculation was done with 6000 full marathanon runners in a 10 minute start wave, and 17500 half marathon runners in 5 start waves, every 15 minutes.
+
+| 2024 Marathon | Reference Marathon |
+| --- | --- |
+| ![image](https://github.com/user-attachments/assets/204ef063-8755-4bee-b92e-36fd8d5c38d7) | ![image](https://github.com/user-attachments/assets/3902ace9-9e1b-477c-a10b-63c2e361e877) |
+
+ <sub>Note that the y-axis of boet reference and 2024 marathon are not the same</sub>
+
+# File description
+Several files are located in the source directory. Output of graphs an animation (HTML) are located in th images directory.
+
+Function of files in source:
+| File name | Description |
+| --- | --- |
+|finishers_over_time_analysis.py | The graphs used for comparing effect on finishers over time of different start times of full and half.|
+|half_and_full_finishers_over_time.py | Creates animation of a moving histogram for full and half marathon, together with individual number of finishers over tima and combined number over time|
+|pace_waves_finishers_over_time_full.py | Animation of moving histogram with finishers over time for full marathon. This is a subset of half_and_full_finishers_over_time.py |
+|pace_waves_finishers_over_time_half.py | Animation of moving histogram with finishers over time for half marathon. This is a subset of half_and_full_finishers_over_time.py |
+|reference_half_and_full_finishers_over_time.py | almost identical to half_and_full_finishers_over_time.py but with marathon parameters for reference marathon, i.e. longer time between starts |
+|runners_heatmap_animated_combined.py | Animated HTML heatmap of 2024 Marathon Eindhoven with both half and full and correct start times. Number of runners is 10% of actual starts because the size of the resulting file would be too large. This does not run smooth on older machines. Does not matter for visualisation |
+|runners_heatmap_animated_full.py | Animated HTML heatmap of 2024 Marathon Eindhoven, full distance | 
+|runners_heatmap_animated_half.py | Animated HTML heatmap of 2024 Marathon Eindhoven, half distance |
+
+
+As you see, there is no file with standard parameters like number of runners or some functions. This could be a future improvement.
+
 # Getting started
 Why is this at the end you may ask? Well, that seems a nice place.
 
 Run ```pip install -r requirements.txt``` to retrieve the packages used in the simulation.
 
 R 4.3.3. was used with lubridate_1.9.3 and fitdistrplus_1.2-1 for determining the distribution, the mean pace, and the standard deviation.
+
+
+
 
 
