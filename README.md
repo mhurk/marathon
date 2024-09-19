@@ -1,3 +1,9 @@
+![GitHub Created At](https://img.shields.io/github/created-at/mhurk/marathon)
+![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/mhurk/marathon)
+![GitHub repo size](https://img.shields.io/github/repo-size/mhurk/marathon)
+![GitHub language count](https://img.shields.io/github/languages/count/mhurk/marathon)
+![GitHub last commit](https://img.shields.io/github/last-commit/mhurk/marathon)
+
 # Marathon Simulation
 Simulation of distribution of runners on a marathon course. Simulated for full and half marathon only, not for other distances like 1/4 marathon or business run.
 
