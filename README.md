@@ -56,7 +56,7 @@ For both editions calculation was done with 6000 full marathanon runners in a 10
  <sub>Note that the y-axis of boet reference and 2024 marathon are not the same</sub>
 
 # File description
-Several files are located in the source directory. Output of graphs an animation (HTML) are located in th images directory.
+Several files are located in the source directory. Output of graphs and animation (HTML) are located in th images directory.
 
 Function of files in source:
 | File name | Description |
