@@ -53,7 +53,7 @@ For both editions calculation was done with 6000 full marathanon runners in a 10
 | --- | --- |
 | ![image](https://github.com/user-attachments/assets/204ef063-8755-4bee-b92e-36fd8d5c38d7) | ![image](https://github.com/user-attachments/assets/3902ace9-9e1b-477c-a10b-63c2e361e877) |
 
- <sub>Note that the y-axis of boet reference and 2024 marathon are not the same</sub>
+ <sub>Note that the y-axis of both reference and 2024 marathon are not the same</sub>
 
 # File description
 Several files are located in the source directory. Output of graphs and animation (HTML) are located in th images directory.
