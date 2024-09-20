@@ -53,22 +53,22 @@ For both editions calculation was done with 6000 full marathanon runners in a 10
 | --- | --- |
 | ![image](https://github.com/user-attachments/assets/204ef063-8755-4bee-b92e-36fd8d5c38d7) | ![image](https://github.com/user-attachments/assets/3902ace9-9e1b-477c-a10b-63c2e361e877) |
 
- <sub>Note that the y-axis of both reference and 2024 marathon are not the same</sub>
+ <sub>Note that the y-axis of reference and 2024 marathon are not the same</sub>
 
 # File description
-Several files are located in the source directory. Output of graphs and animation (HTML) are located in th images directory.
+Several files are located in the source directory. Output of graphs and animation (HTML) are located in the images directory.
 
 Function of files in source:
-| File name | Description |
-| --- | --- |
-|finishers_over_time_analysis.py | The graphs used for comparing effect on finishers over time of different start times of full and half.|
-|half_and_full_finishers_over_time.py | Creates animation of a moving histogram for full and half marathon, together with individual number of finishers over tima and combined number over time|
-|pace_waves_finishers_over_time_full.py | Animation of moving histogram with finishers over time for full marathon. This is a subset of half_and_full_finishers_over_time.py |
-|pace_waves_finishers_over_time_half.py | Animation of moving histogram with finishers over time for half marathon. This is a subset of half_and_full_finishers_over_time.py |
-|reference_half_and_full_finishers_over_time.py | almost identical to half_and_full_finishers_over_time.py but with marathon parameters for reference marathon, i.e. longer time between starts |
-|runners_heatmap_animated_combined.py | Animated HTML heatmap of 2024 Marathon Eindhoven with both half and full and correct start times. Number of runners is 10% of actual starts because the size of the resulting file would be too large. This does not run smooth on older machines. Does not matter for visualisation |
-|runners_heatmap_animated_full.py | Animated HTML heatmap of 2024 Marathon Eindhoven, full distance | 
-|runners_heatmap_animated_half.py | Animated HTML heatmap of 2024 Marathon Eindhoven, half distance |
+| File name | Description |  Example output<br>(in /images) |
+| --- | --- | :---: |
+|finishers_over_time_analysis.py | The graphs used for comparing effect on finishers over time of different start times of full and half.| <img src="https://github.com/user-attachments/assets/3902ace9-9e1b-477c-a10b-63c2e361e877" width = "250"> |
+|half_and_full_finishers_over_time.py | Creates animation of a moving histogram for full and half marathon, together with individual number of finishers over time and combined number of finishers over time| <img src="https://github.com/user-attachments/assets/ff8ece7f-6263-408d-9b90-94c2495067ac" width = "250"> |
+|pace_waves_finishers_over_time_full.py | Animation of moving histogram with finishers over time for full marathon. This is a subset of half_and_full_finishers_over_time.py ||
+|pace_waves_finishers_over_time_half.py | Animation of moving histogram with finishers over time for half marathon. This is a subset of half_and_full_finishers_over_time.py ||
+|reference_half_and_full_finishers_over_time.py | almost identical to half_and_full_finishers_over_time.py but with marathon parameters for reference marathon, i.e. longer time between starts |  |
+|runners_heatmap_animated_combined.py | Animated HTML heatmap of 2024 Marathon Eindhoven with both half and full and correct start times. Number of runners is 10% of actual starts because the size of the resulting file would be too large. This does not run smooth on older machines. Does not matter for visualisation | <img src="https://github.com/user-attachments/assets/fe1af19e-4ab1-4f4e-a8a3-887d0a762ef6" width = "250"> |
+|runners_heatmap_animated_full.py | Animated HTML heatmap of 2024 Marathon Eindhoven, full distance | <img src="https://github.com/user-attachments/assets/65b3fbeb-0d56-4023-ba01-44e63a08fea0" width = "250"> |
+|runners_heatmap_animated_half.py | Animated HTML heatmap of 2024 Marathon Eindhoven, half distance | see full |
 
 
 As you see, there is no file with standard parameters like number of runners or some functions. This could be a future improvement.
