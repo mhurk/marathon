@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
+from pathlib import Path
 
 # Simulation parameters
 num_runners_full = 6000
@@ -157,10 +158,12 @@ def update(frame):
     plt.tight_layout()
 
 
+filename = '../images/' + Path(__file__).stem
+
 # Create the animation
 ani = animation.FuncAnimation(fig, update, frames=len(time_steps), repeat=False)
-ani.save('../images/wave_simulation_animation_finishers_combined.mp4', writer='ffmpeg', fps=10)
+ani.save(filename + '.mp4', writer='ffmpeg', fps=10)
 
 # Store last frame
 update(len(time_steps) - 1)  # Update to the last frame
-plt.savefig('../images/wave_simulation_finishers_last_frame_combined.png', dpi=300)
+plt.savefig(filename + '_last_frame.png', dpi=300)

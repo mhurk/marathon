@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
+from pathlib import Path
 
 # Simulation parameters
 num_runners = 6000
@@ -77,10 +78,12 @@ def update(frame):
     ax2.set_ylim([0, num_runners])
     ax2.grid(True)
 
+filename = '../images/' + Path(__file__).stem
+
 # Create the animation
 ani = animation.FuncAnimation(fig, update, frames=len(time_steps), repeat=False)
-ani.save('../images/marathon_wave_simulation_animation_finishers_full.mp4', writer='ffmpeg', fps=10)
+ani.save(filename + '.mp4', writer='ffmpeg', fps=10)
 
 # Store last frame
 update(len(time_steps) - 1)  # Update to the last frame
-plt.savefig('../images/marathon_wave_simulation_finishers_last_frame_full.png', dpi=300)
+plt.savefig(filename + '_last_frame.png', dpi=300)
