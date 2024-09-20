@@ -5,6 +5,9 @@ import folium
 from folium.plugins import HeatMapWithTime
 import gpxpy
 import gpxpy.gpx
+from pathlib import Path
+
+filename = '../images/' + Path(__file__).stem + '.html'
 
 # Load GPX files
 def load_gpx_route(file_path):
@@ -43,7 +46,7 @@ def compute_gpx_bounds(route_coords):
     return [(min_lat, min_lon), (max_lat, max_lon)]
 
 # Create a single HTML heatmap with time-based animation using HeatMapWithTime
-def create_heatmap_with_time(runner_coords_over_time_full, runner_coords_over_time_half, route_coords_full, route_coords_half, bounds, output_html='../images/heatmap_animated_combined.html'):
+def create_heatmap_with_time(runner_coords_over_time_full, runner_coords_over_time_half, route_coords_full, route_coords_half, bounds, output_html = filename):
   
     # Initialize the map centered around the bounding box center
     center_lat = (bounds[0][0] + bounds[1][0]) / 2

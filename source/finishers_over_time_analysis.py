@@ -1,6 +1,33 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from pathlib import Path
+
+while True:
+    edition = input("""
+                    Choose marathon edition 
+                    [1] 2024 edition with start at 10:00 and 11:30
+                    [2] 2023 edition with start at 10:00 and 14:00\n
+                    """)
+    try:
+        if edition == '1':
+            max_time = 370              # Maximum time for simulation in minutes (370 for 2024 edition, 500 for 2023)
+            start_offset = 90           # Half marathon starts 90 minutes after the full in 2024, 240 minutes in 2023 (the reference)
+            edition_name = "2024"
+            print(f"2024 Edition: Max time {max_time}, Start offset {start_offset}")
+            break
+        elif edition == '2':
+            max_time = 500
+            start_offset = 240
+            edition_name = "reference"
+            print(f"Reference (2023) Edition: Max time {max_time}, Start offset {start_offset}")
+            break
+        elif edition not in ['1', '2']:
+            print("Please choose either 1 or 2")
+    except ValueError:
+        print("Invalid input, please enter a valid option")
+
+filename = '../images/'+ Path(__file__).stem + "_" + edition_name + '.png'
 
 # Simulation parameters
 num_runners_full = 6000
@@ -9,7 +36,6 @@ race_distance_full = 42.2  # Full marathon distance in km
 race_distance_half = 21.1  # Half marathon distance in km
 random_paces_full = np.random.normal(5.434008, 0.834381, num_runners_full)  # Random pace in minutes per km, normal distribution assumed
 random_paces_half = np.random.normal(5.434008, 0.834381, num_runners_half)  # Random pace in minutes per km
-max_time = 370  # Maximum time in minutes (370 for 2024 edition, 500 for 2023)
 time_steps = np.arange(0, max_time + 1)
 
 # Create wave starts: Divide runners into waves
@@ -23,7 +49,6 @@ runner_start_times_full = np.repeat(wave_start_times_full, runners_per_wave_full
 # half
 num_waves_half = 5
 wave_intervals_half = 15    # 1 minute gap to simulate 10 minutes for the start pen to clear
-start_offset = 90          # half marathon starts 90 minutes after the full in 2024, 240 minutes in 2023 (the reference)
 runners_per_wave_half = num_runners_half // num_waves_half
 wave_start_times_half = np.array([i * wave_intervals_half for i in range(num_waves_half)]) + start_offset
 runner_start_times_half = np.repeat(wave_start_times_half, runners_per_wave_half)
@@ -176,5 +201,5 @@ ax3.legend()
 
 plt.tight_layout()
 
-plt.savefig('../images/analysis.png', dpi=300)
+plt.savefig(filename, dpi=300)
 
