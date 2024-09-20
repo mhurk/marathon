@@ -56,20 +56,19 @@ For both editions calculation was done with 6000 full marathanon runners in a 10
  <sub>Note that the y-axis of reference and 2024 marathon are not the same</sub>
 
 # File description
-Several files are located in the source directory. Output of graphs and animation (HTML) are located in the images directory.
+Several files are located in the source directory. Output of graphs and animation (HTML) are located in the images directory. Filenames of the output is equal to the python file, only a different exetnesion and in some cases additional info.
 
 Function of files in source:
 | File name | Description |  Example output<br>(in /images) |
 | --- | --- | :---: |
 |finishers_over_time_analysis.py | The graphs used for comparing effect on finishers over time of different start times of full and half.| <img src="https://github.com/user-attachments/assets/3902ace9-9e1b-477c-a10b-63c2e361e877" width = "250"> |
 |half_and_full_finishers_over_time.py | Creates animation of a moving histogram for full and half marathon, together with individual number of finishers over time and combined number of finishers over time| <img src="https://github.com/user-attachments/assets/ff8ece7f-6263-408d-9b90-94c2495067ac" width = "250"> |
-|pace_waves_finishers_over_time_full.py | Animation of moving histogram with finishers over time for full marathon. This is a subset of half_and_full_finishers_over_time.py ||
-|pace_waves_finishers_over_time_half.py | Animation of moving histogram with finishers over time for half marathon. This is a subset of half_and_full_finishers_over_time.py ||
-|reference_half_and_full_finishers_over_time.py | almost identical to half_and_full_finishers_over_time.py but with marathon parameters for reference marathon, i.e. longer time between starts |  |
+|half_and_full_finishers_over_time_reference.py | Almost identical to half_and_full_finishers_over_time.py but with marathon parameters for reference marathon, i.e. longer time between starts. Should be combined in a later update. | <img src="https://github.com/user-attachments/assets/79415fe1-87f3-4b8f-8516-a8b110053b59" width = "250"> |
+|pace_waves_finishers_over_time_full.py | Animation of moving histogram with finishers over time for full marathon. This is a subset of half_and_full_finishers_over_time.py | <img src="https://github.com/user-attachments/assets/92637c72-c8a0-4a34-a1bf-a6d77ec431ba" width = "250"> |
+|pace_waves_finishers_over_time_half.py | Animation of moving histogram with finishers over time for half marathon. This is a subset of half_and_full_finishers_over_time.py | <img src="https://github.com/user-attachments/assets/bbd4e46d-2077-4fdb-af1f-392a97c5aeca" width = "250"> |
 |runners_heatmap_animated_combined.py | Animated HTML heatmap of 2024 Marathon Eindhoven with both half and full and correct start times. Number of runners is 10% of actual starts because the size of the resulting file would be too large. This does not run smooth on older machines. Does not matter for visualisation | <img src="https://github.com/user-attachments/assets/fe1af19e-4ab1-4f4e-a8a3-887d0a762ef6" width = "250"> |
 |runners_heatmap_animated_full.py | Animated HTML heatmap of 2024 Marathon Eindhoven, full distance | <img src="https://github.com/user-attachments/assets/65b3fbeb-0d56-4023-ba01-44e63a08fea0" width = "250"> |
-|runners_heatmap_animated_half.py | Animated HTML heatmap of 2024 Marathon Eindhoven, half distance | see full |
-
+|runners_heatmap_animated_half.py | Animated HTML heatmap of 2024 Marathon Eindhoven, half distance | <img src="https://github.com/user-attachments/assets/3ee31735-94df-425c-82ac-c60017cef9b7" width = "250"> |
 
 As you see, there is no file with standard parameters like number of runners or some functions. This could be a future improvement.
 
