@@ -5,6 +5,16 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/mhurk/marathon)
 <!---![GitHub repo size](https://img.shields.io/github/repo-size/mhurk/marathon)--->
 
+- [Marathon Simulation](#marathon-simulation)
+  - [Moving histogram and finishers over time](#moving-histogram-and-finishers-over-time)
+  - [Animated heatmap](#animated-heatmap)
+  - [Animated heatmap half and full marathon combined](#animated-heatmap-half-and-full-marathon-combined)
+- [Reference marathon](#reference-marathon)
+- [Comparison](#comparison)
+- [File description](#file-description)
+- [Getting started](#getting-started)
+
+
 # Marathon Simulation
 Simulation of distribution of runners on a marathon course. Simulated for full and half marathon only, not for other distances like 1/4 marathon or business run.
 
@@ -38,6 +48,7 @@ Number of runners in the simulation is changed to 10% of actual starts to limit 
 <sub>Screenshot from an animated heatmap for both distances</sub>
 
 # Reference marathon
+
 As 260 finishers per minute seems quite a lot to me I made a reference (as suggested by @CanCakiroglu) for a previous marathon in Eindhoven. In 2023 the start for the full marathon was at 10:00 and the half started at 14:00 in the afternoon. I don't exactly know the number of runners for that edition but I used the same numbers as for the 2024 edition. Below graph shows the finishers over time. In the steepest part the number of runners crossing the finishline is **approximately 145 per minute**. Significantly lower that the predicted number for the 2024 edition.
 
 <img src="https://github.com/user-attachments/assets/1eb5fd93-c4e7-48e0-98a8-33b3bc8e909b" height="400">
