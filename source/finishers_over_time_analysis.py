@@ -133,7 +133,7 @@ fig, (ax1, ax2, ax3) = plt.subplots(3, 1, figsize=(8, 12))
 ax1.plot(finishers_data['Time'], finishers_data['CumulativeFinishersCombined'], linestyle = '-', color = "orange", linewidth = 2)
 ax1.set_title('Cumulative number of finishers over time, full and half')
 ax1.set_xlabel('Time')
-ax1.set_ylabel('Cumulative Finishers')
+ax1.set_ylabel('Cumulative finishers')
 ax1.grid(True)
 
 # Calculate the growth rate of finishers
@@ -145,10 +145,10 @@ finishers_data['SmoothedGrowthRate'] = finishers_data['GrowthRate'].rolling(wind
 
 ## Plot the growth rate over time
 ax2.plot(finishers_data['Time'], finishers_data['GrowthRate'], marker = '.', color = "orange",  alpha=0.5, label = 'Growth rate')
-ax2.plot(finishers_data['Time'], finishers_data['SmoothedGrowthRate'], color = 'red', linewidth = 2, label = 'Smoothed Growth Rate')
+ax2.plot(finishers_data['Time'], finishers_data['SmoothedGrowthRate'], color = 'red', linewidth = 2, label = 'Smoothed growth rate')
 ax2.set_title('Growth rate of finishers over time')
 ax2.set_xlabel('Time')
-ax2.set_ylabel('Growth Rate')
+ax2.set_ylabel('Growth rate')
 ax2.grid(True)
 ax2.legend()
 
@@ -193,9 +193,9 @@ if fwhm_smoothed is not None:
     ax3.axvline(x=fwhm_end_smoothed, color='green', linestyle='--', label='FWHM End')
     ax3.fill_betweenx([0, max_smoothed_growth_rate], fwhm_start_smoothed, fwhm_end_smoothed, color='gray', alpha = 0.2, label = f'FWHM = {fwhm_smoothed:.2f} minutes')
 
-ax3.set_title('Smoothed Growth Rate of Finishers Over Time with FWHM')
+ax3.set_title('Smoothed growth rate of finishers over time with FWHM')
 ax3.set_xlabel('Time')
-ax3.set_ylabel('Growth Rate')
+ax3.set_ylabel('Growth rate')
 ax3.grid(True)
 ax3.legend()
 
