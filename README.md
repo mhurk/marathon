@@ -56,7 +56,7 @@ As 260 finishers per minute seems quite a lot to me I made a reference (as sugge
 <sub>Number of finishers over time for the start schedule as used in 2023.</sub>
 
 # Comparison
-I order to compare the number of finishers over time the growth rate, maximum groth rate, and Full Wifhth at Half Maximum (FWHM) was calcualted. The growth rate essentially tells how fast runners are finishing at any given point in time. The peak growth rate shows the maximum at which runners are crossing the finish line. FWHM shows the time window over which the majority of the runners are finishing, helping race organizers understand congestion patterns at the finish line.
+I order to compare the number of finishers over time the growth rate, maximum groth rate, and Full Width at Half Maximum (FWHM) was calcualted. The growth rate essentially tells how fast runners are finishing at any given point in time. The peak growth rate shows the maximum at which runners are crossing the finish line. FWHM shows the time window over which the majority of the runners are finishing, helping race organizers understand congestion patterns at the finish line.
 
 Below graphs show this information for a reference marathon where the half marathon starts 4 hours (240 minutes) after the full marathon. In the 2024 marathon the start between full and half is 90 minutes. 
 For both editions calculation was done with 6000 full marathanon runners in a 10 minute start wave, and 17500 half marathon runners in 5 start waves, every 15 minutes.
