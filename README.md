@@ -63,7 +63,7 @@ For both editions calculation was done with 6000 full marathanon runners in a 10
 
 | 2024 Marathon | Reference Marathon |
 | --- | --- |
-| ![image](https://github.com/user-attachments/assets/204ef063-8755-4bee-b92e-36fd8d5c38d7) | ![image](https://github.com/user-attachments/assets/3902ace9-9e1b-477c-a10b-63c2e361e877) |
+| ![image](https://github.com/mhurk/marathon/blob/main/images/finishers_over_time_analysis_2024.png) | ![image](https://github.com/mhurk/marathon/blob/main/images/finishers_over_time_analysis_reference.png) |
 
  <sub>Note that the y-axis of reference and 2024 marathon are not the same</sub>
 
