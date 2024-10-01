@@ -13,7 +13,7 @@ time_steps = np.arange(0, max_time + 1)
 
 # Create wave starts: Divide runners intowaves
 num_waves = 5
-wave_intervals = 15  # 1 minute gap to simulate 10 minutes for the start pen to clear
+wave_intervals = 10    # 10 minute gap between waves
 runners_per_wave = num_runners // num_waves
 wave_start_times = np.array([i * wave_intervals for i in range(num_waves)])
 runner_start_times = np.repeat(wave_start_times, runners_per_wave)

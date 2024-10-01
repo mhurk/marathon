@@ -114,7 +114,7 @@ time_steps = np.arange(0, max_time + 1, 5)  # Every 5 minutes
 
 # Create wave starts: Divide runners into 4 waves starting 15 minutes apart
 num_waves = 5
-wave_intervals = 15  # 15-minute gaps between each wave, expected around 250 runners per minute.
+wave_intervals = 10  # 10-minute gaps between each wave, expected around 250 runners per minute.
 runners_per_wave = num_runners // num_waves
 wave_start_times = np.array([i * wave_intervals for i in range(num_waves)])
 runner_start_times = np.repeat(wave_start_times, runners_per_wave)
