@@ -28,7 +28,7 @@ Simulation of distribution of runners on a marathon course. Simulated for full a
 - Animated heatmap of runners on the course (I think this is really cool!)
 - Combine half and full marathon
     - For ASML Marathon Eindhoven 2024:
-    - Half marathon has 5 start waves at 11:30, 11:45, 12:00, 12:15 en 12:30 (total 17500 runners). 
+    - Half marathon has 5 start waves with 10 minute intervals, starting at 11:30 (total 17500 runners). 
     - Full marathon has 1 start wave which lasts around 10 minutes, starting at 10:00 (10:00 - 10:10), 6000 runners. (modelled as 10 waves with 1 minute interval)
 - Added event with start times as in previous editions of this even (full at 10:00, half at 14:00). Compared effect of both schedules on number of finishers over time
 
@@ -56,14 +56,14 @@ As 260 finishers per minute seems quite a lot to me I made a reference (as sugge
 <sub>Number of finishers over time for the start schedule as used in 2023.</sub>
 
 # Comparison
-I order to compare the number of finishers over time the growth rate, maximum groth rate, and Full Wifhth at Half Maximum (FWHM) was calcualted. The growth rate essentially tells how fast runners are finishing at any given point in time. The peak growth rate shows the maximum at which runners are crossing the finish line. FWHM shows the time window over which the majority of the runners are finishing, helping race organizers understand congestion patterns at the finish line.
+I order to compare the number of finishers over time the growth rate, maximum groth rate, and Full Width at Half Maximum (FWHM) was calcualted. The growth rate essentially tells how fast runners are finishing at any given point in time. The peak growth rate shows the maximum at which runners are crossing the finish line. FWHM shows the time window over which the majority of the runners are finishing, helping race organizers understand congestion patterns at the finish line.
 
 Below graphs show this information for a reference marathon where the half marathon starts 4 hours (240 minutes) after the full marathon. In the 2024 marathon the start between full and half is 90 minutes. 
-For both editions calculation was done with 6000 full marathanon runners in a 10 minute start wave, and 17500 half marathon runners in 5 start waves, every 15 minutes.
+For both editions calculation was done with 6000 full marathanon runners in a 10 minute start wave, and 17500 half marathon runners in 5 start waves, every 10 minutes.
 
 | 2024 Marathon | Reference Marathon |
 | --- | --- |
-| ![image](https://github.com/user-attachments/assets/204ef063-8755-4bee-b92e-36fd8d5c38d7) | ![image](https://github.com/user-attachments/assets/3902ace9-9e1b-477c-a10b-63c2e361e877) |
+| ![image](https://github.com/mhurk/marathon/blob/main/images/finishers_over_time_analysis_2024.png) | ![image](https://github.com/mhurk/marathon/blob/main/images/finishers_over_time_analysis_reference.png) |
 
  <sub>Note that the y-axis of reference and 2024 marathon are not the same</sub>
 

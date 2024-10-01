@@ -104,7 +104,7 @@ num_runners_half = 1750    # 10% of actual starters to keep the file size under 
 random_paces_half = np.random.normal(5.434008, 0.834381, num_runners_half)  # Random pace in minutes per km
 # Create wave starts: Divide runners into waves
 num_waves_half = 5
-wave_intervals_half = 15
+wave_intervals_half = 10
 start_offset = 90 #half marathon starts 90 minutes after the full
 runners_per_wave_half = num_runners_half // num_waves_half
 wave_start_times_half = np.array([i * wave_intervals_half for i in range(num_waves_half)]) + start_offset
