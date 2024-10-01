@@ -11,12 +11,14 @@ random_paces = np.random.normal(5.434008, 0.834381, num_runners)  # Random pace 
 max_time = 180 + 75  # Maximum time in minutes (180 for half marathon, 360 for full)
 time_steps = np.arange(0, max_time + 1)
 
-# Create wave starts: Divide runners intowaves
-num_waves = 5
-wave_intervals = 15  # 1 minute gap to simulate 10 minutes for the start pen to clear
-runners_per_wave = num_runners // num_waves
-wave_start_times = np.array([i * wave_intervals for i in range(num_waves)])
-runner_start_times = np.repeat(wave_start_times, runners_per_wave)
+# Set the rate of starts
+start_rate = 250  # Runners per minute
+
+# Calculate the total time required to start all runners
+total_start_time = num_runners / start_rate  # Time in minutes
+
+# Create an array of runner start times based on the start rate
+runner_start_times = np.linspace(0, total_start_time, num_runners)  # Start times spread over the start period
 
 # Create a DataFrame to store runner data, including their start time
 runners_df = pd.DataFrame({
@@ -62,7 +64,7 @@ def update(frame):
     
     # Plot the updated distribution
     ax1.hist(distances, bins=50, color='purple', alpha=0.6)
-    ax1.set_title(f'Distribution of runners at {time_elapsed} minutes\nStart in {num_waves} waves with {wave_intervals} minute interval')
+    ax1.set_title(f'Distribution of runners at {time_elapsed} minutes\nStart rate of {start_rate} runners per minute')
     ax1.set_xlabel('Distance covered (km)')
     ax1.set_ylabel('Number of runners')
     ax1.set_xlim([0, race_distance])
