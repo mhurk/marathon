@@ -48,7 +48,7 @@ runner_start_times_full = np.repeat(wave_start_times_full, runners_per_wave_full
 
 # half
 num_waves_half = 5
-wave_intervals_half = 15    # 1 minute gap to simulate 10 minutes for the start pen to clear
+wave_intervals_half = 10    # 10 minute gap between waves
 runners_per_wave_half = num_runners_half // num_waves_half
 wave_start_times_half = np.array([i * wave_intervals_half for i in range(num_waves_half)]) + start_offset
 runner_start_times_half = np.repeat(wave_start_times_half, runners_per_wave_half)
