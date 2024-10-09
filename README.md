@@ -82,6 +82,8 @@ Function of files in source:
 |runners_heatmap_animated_combined.py | Animated HTML heatmap of 2024 Marathon Eindhoven with both half and full and correct start times. Number of runners is 10% of actual starts because the size of the resulting file would be too large. This does not run smooth on older machines. Does not matter for visualisation | <img src="https://github.com/user-attachments/assets/fe1af19e-4ab1-4f4e-a8a3-887d0a762ef6" width = "250"> |
 |runners_heatmap_animated_full.py | Animated HTML heatmap of 2024 Marathon Eindhoven, full distance | <img src="https://github.com/user-attachments/assets/65b3fbeb-0d56-4023-ba01-44e63a08fea0" width = "250"> |
 |runners_heatmap_animated_half.py | Animated HTML heatmap of 2024 Marathon Eindhoven, half distance | <img src="https://github.com/user-attachments/assets/3ee31735-94df-425c-82ac-c60017cef9b7" width = "250"> |
+| real_data_half.py | Create animated histogram with real data | |
+| import_real_data.py | Function to process excel to usable data | na |
 
 As you see, there is no file with standard parameters like number of runners or some functions. See issue https://github.com/mhurk/marathon/issues/4
 
