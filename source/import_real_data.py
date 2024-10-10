@@ -30,15 +30,12 @@ def import_and_clean_results(file_path: str, sheet_name: str = 'Vrouwen') -> pd.
     
     # Number of starters per minute
     StartRate = len(df_cleaned['StartTimeHalf']) / max(df_cleaned['StartTimeHalf'])
-    print(f'Number of starting runners per minute: {StartRate:.2f}')
+    print(f'Average number of starting runners per minute: {StartRate:.1f}')
         
     # print(df_cleaned)
     # print(df_cleaned.dtypes)
         
     return df_cleaned
-
-
-
 
 
 
