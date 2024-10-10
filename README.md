@@ -1,5 +1,5 @@
 ![GitHub Created At](https://img.shields.io/github/created-at/mhurk/marathon)
-![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/mhurk/marathon)
+![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/mhurk/marathon%2Fsource?type=file)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mhurk/marathon)
 ![GitHub language count](https://img.shields.io/github/languages/count/mhurk/marathon)
 ![GitHub last commit](https://img.shields.io/github/last-commit/mhurk/marathon)
