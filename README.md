@@ -93,6 +93,8 @@ Why is this at the end you may ask? Well, that seems a nice place.
 
 Run ```pip install -r requirements.txt``` to retrieve the packages used in the simulation.
 
+You also need ffmpeg to create the animations. Details on how to do this can be found on [stackoverflow](https://stackoverflow.com/questions/62644614/requested-moviewriter-ffmpeg-not-available-even-when-i-installed-it).
+
 R 4.3.3. was used with lubridate_1.9.3 and fitdistrplus_1.2-1 for determining the distribution, the mean pace, and the standard deviation.
 
 
