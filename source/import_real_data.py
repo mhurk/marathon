@@ -1,11 +1,10 @@
 import pandas as pd
-import openpyxl
 
 # Runner parameters
-def import_and_clean_results(file_path: str, sheet_name: str = 'Vrouwen') -> pd.DataFrame:
+def import_and_clean_results(file_path: str) -> pd.DataFrame:
     
     # Load the Excel sheet, skipping the first four rows and using the fifth row as headers
-    df = pd.read_excel(file_path, sheet_name=sheet_name, skiprows=4)
+    df = pd.read_excel(file_path, skiprows=4)
     
     # Rename the columns for better clarity
     df.columns = [
@@ -31,10 +30,7 @@ def import_and_clean_results(file_path: str, sheet_name: str = 'Vrouwen') -> pd.
     # Number of starters per minute
     StartRate = len(df_cleaned['StartTimeHalf']) / max(df_cleaned['StartTimeHalf'])
     print(f'Average number of starting runners per minute: {StartRate:.1f}')
-        
-    # print(df_cleaned)
-    # print(df_cleaned.dtypes)
-        
+         
     return df_cleaned
 
 
