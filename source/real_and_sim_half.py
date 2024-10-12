@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from pathlib import Path
+from tqdm import tqdm
 
 from import_real_data import *
 
@@ -32,7 +33,6 @@ total_start_time = num_runners_sim / start_rate  # Time in minutes
 
 # Create a DataFrame to store runner data, including their start time
 df_sim = pd.DataFrame({
-    # 'RunnerID': range(1, num_runners + 1),
     'Pace': random_paces,  
     'StartTime': np.linspace(0, total_start_time, num_runners_sim)  # Start time in minutes
 })
@@ -47,6 +47,9 @@ ax3 = plt.subplot2grid((2, 4), (0, 2), rowspan=2, colspan=2)
 finishers_over_time_real = [0]  # Start with 0 finishers at time 0
 finishers_over_time_sim = [0]  # Start with 0 finishers at time 0
 
+# Initialize progress bar
+progress_bar = tqdm(total=len(time_steps))
+
 # Function to update the animation for each time step
 def update(frame):
     ax1.clear()
@@ -57,12 +60,9 @@ def update(frame):
     total_finishers_real = 0
     total_finishers_sim = 0
     
-    # time_elapsed = time_steps[frame]
-    
     # Only consider runners who have started
     active_runners_real = df_real[df_real['StartTime'] <= time_elapsed]
     active_runners_sim = df_sim[df_sim['StartTime'] <= time_elapsed]
-    
     
     # Calculate how long each active runner has been running
     running_time_real = time_elapsed - active_runners_real['StartTime']
@@ -123,12 +123,18 @@ def update(frame):
     
     plt.tight_layout()
 
+    # Update progress bar
+    progress_bar.update(1)
+
 filename = '../images/' + Path(__file__).stem
 
-# Create the animation
+# Create animation
 ani = animation.FuncAnimation(fig, update, frames=len(time_steps), repeat=False)
 ani.save(filename + '.mp4', writer='ffmpeg', fps=10)
 
 # Store last frame
 update(len(time_steps) - 1)  # Update to the last frame
 plt.savefig(filename + '_last_frame.png', dpi=300)
+
+# Close progress bar
+progress_bar.close()
