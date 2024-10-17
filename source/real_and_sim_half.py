@@ -13,7 +13,7 @@ max_time = 260                            # time for simulation
 time_steps = np.arange(0, max_time + 1)   
 
 # Runner parameters real data
-file_path = '../data/Uits04_8_HalfASML.xlsx'
+file_path = '../data/results_marathon_eindhoven_2024.xlsx'
 df_real = import_and_clean_results(file_path)
 num_runners_real = len(df_real)
 
