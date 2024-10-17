@@ -107,7 +107,7 @@ def update(frame):
     # Plot the finishers over time, combined
     ax3.plot(time_steps[:len(finishers_over_time_real)], 
              [float(finishers_over_time_real[i]) / num_runners_real * 100 for i in range(len(finishers_over_time_real))], 
-             color='deeppink',
+             color='red',
              label = 'Runners')     # normalized
     ax3.plot(time_steps[:len(finishers_over_time_sim)],  
              [float(finishers_over_time_sim[i]) / num_runners_sim * 100 for i in range(len(finishers_over_time_sim))], 
