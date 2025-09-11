@@ -6,17 +6,24 @@ from pathlib import Path
 while True:
     edition = input("""
                     Choose marathon edition 
-                    [1] 2024 edition with start at 10:00 and 11:30
-                    [2] 2023 edition with start at 10:00 and 14:00\n
+                    [1] 2025 edition with start at 10:00 and 11:30
+                    [2] 2024 edition with start at 10:00 and 11:30
+                    [3] 2023 edition with start at 10:00 and 14:00\n
                     """)
     try:
         if edition == '1':
-            max_time = 370              # Maximum time for simulation in minutes (370 for 2024 edition, 500 for 2023)
-            start_offset = 90           # Half marathon starts 90 minutes after the full in 2024, 240 minutes in 2023 (the reference)
-            edition_name = "2024"
-            print(f"2024 Edition: Max time {max_time}, Start offset {start_offset}")
+            max_time = 370              # Maximum time for simulation in minutes (370 for 2024 and 2025 edition, 500 for 2023)
+            start_offset = 90           # Half marathon starts 90 minutes after the full in 2024 and 2025, 240 minutes in 2023 (the reference)
+            edition_name = "2025"
+            print(f"2025 Edition: Max time {max_time}, Start offset {start_offset}")
             break
         elif edition == '2':
+            max_time = 370
+            start_offset = 90
+            edition_name = "reference"
+            print(f"Reference (2023) Edition: Max time {max_time}, Start offset {start_offset}")
+            break
+        elif edition == '3':
             max_time = 500
             start_offset = 240
             edition_name = "reference"
@@ -48,7 +55,7 @@ runner_start_times_full = np.repeat(wave_start_times_full, runners_per_wave_full
 
 # half
 num_waves_half = 5
-wave_intervals_half = 10    # 10 minute gap between waves
+wave_intervals_half = 15    # 10 minute gap between waves
 runners_per_wave_half = num_runners_half // num_waves_half
 wave_start_times_half = np.array([i * wave_intervals_half for i in range(num_waves_half)]) + start_offset
 runner_start_times_half = np.repeat(wave_start_times_half, runners_per_wave_half)
