@@ -20,8 +20,8 @@ while True:
         elif edition == '2':
             max_time = 370
             start_offset = 90
-            edition_name = "reference"
-            print(f"Reference (2023) Edition: Max time {max_time}, Start offset {start_offset}")
+            edition_name = "2024"
+            print(f"2024 Edition: Max time {max_time}, Start offset {start_offset}")
             break
         elif edition == '3':
             max_time = 500
@@ -55,7 +55,7 @@ runner_start_times_full = np.repeat(wave_start_times_full, runners_per_wave_full
 
 # half
 num_waves_half = 5
-wave_intervals_half = 15    # 10 minute gap between waves
+wave_intervals_half = 15    # 15 minute gap between waves
 runners_per_wave_half = num_runners_half // num_waves_half
 wave_start_times_half = np.array([i * wave_intervals_half for i in range(num_waves_half)]) + start_offset
 runner_start_times_half = np.repeat(wave_start_times_half, runners_per_wave_half)
@@ -209,4 +209,5 @@ ax3.legend()
 plt.tight_layout()
 
 plt.savefig(filename, dpi=300)
+
 
