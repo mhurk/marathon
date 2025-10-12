@@ -26,7 +26,8 @@ df_real = pd.DataFrame({
 # Simulation parameters
 num_runners_sim = 15000
 random_paces = np.random.normal(5.434008, 0.834381, num_runners_sim)  # Random pace in minutes per km, normal distribution assumed
-start_rate = 15000 / 90  # Runners per minute
+# start_rate = num_runners_sim / 90  # Runners per minute 
+start_rate = 235 # 235 is average number of starting runners per minute, in 2024 data
 
 # Calculate the total time required to start all runners
 total_start_time = num_runners_sim / start_rate  # Time in minutes

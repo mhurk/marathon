@@ -4,7 +4,7 @@ import numpy as np
 # Runner parameters
 def import_and_clean_results(file_path: str) -> pd.DataFrame:
     
-    # Load the Excel sheet, skipping the first four rows and using the first row as headers
+    # Load the Excel sheet, and using the first row as headers
     df = pd.read_excel(file_path, skiprows=0)
     
     df_cleaned = df.drop(columns=['Bib', 'Expected'])
