@@ -7,7 +7,7 @@ import gpxpy
 import gpxpy.gpx
 from pathlib import Path
 
-filename = '../images/' + Path(__file__).stem + '.html'
+filename = '../images/' + Path(__file__).stem + '_2025update.html'
 
 # Load GPX files
 def load_gpx_route(file_path):
@@ -104,7 +104,7 @@ num_runners_half = 1750    # 10% of actual starters to keep the file size under 
 random_paces_half = np.random.normal(5.434008, 0.834381, num_runners_half)  # Random pace in minutes per km
 # Create wave starts: Divide runners into waves
 num_waves_half = 5
-wave_intervals_half = 10
+wave_intervals_half = 15
 start_offset = 90 #half marathon starts 90 minutes after the full
 runners_per_wave_half = num_runners_half // num_waves_half
 wave_start_times_half = np.array([i * wave_intervals_half for i in range(num_waves_half)]) + start_offset
@@ -126,7 +126,7 @@ runners_df_half = pd.DataFrame({
 })
 
 # Read GPX files
-route_coords_full = load_gpx_route("../gpxfiles/Course_Marathon_Eindhoven_2024_full.gpx")
+route_coords_full = load_gpx_route("../temp/Course_Marathon_Eindhoven_2025_full_fixed_density.gpx")
 route_coords_half = load_gpx_route("../gpxfiles/Course_Marathon_Eindhoven_2024_half.gpx")
 
 # Get the default start coordinate

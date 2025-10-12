@@ -86,7 +86,7 @@ def create_heatmap_with_time(runner_coords_over_time, route_coords, bounds, outp
     # more settings and details: https://github.com/python-visualization/folium/blob/main/folium/plugins/heat_map_withtime.py
     HeatMapWithTime(
         heatmap_data,
-        min_speed = 2.0,
+        min_speed = 4.0,
         radius = 12,          
         auto_play = True,
         max_opacity = 0.7,    
@@ -106,14 +106,14 @@ def compute_gpx_bounds(route_coords):
     return [(min_lat, min_lon), (max_lat, max_lon)]
 
 # Simulation parameters
-num_runners = 6000
+num_runners = 600
 race_distance = 42.2
 random_paces = np.random.normal(5.434008, 0.834381, num_runners)  # Random pace in minutes per km, normal distribution assumed
 max_time = 360 + 10  # Maximum time in minutes (180 for half marathon, 360 for full)
-time_steps = np.arange(0, max_time + 1, 5)  # Every 5 minutes
+time_steps = np.arange(0, max_time + 1, 2.5)  # frame for every 2.5 minutes
 
 # Create wave starts: Divide runners into 4 waves starting 15 minutes apart
-num_waves = 10
+num_waves = 5
 wave_intervals = 1  # 1-minute gaps between each wave, to simulate the 0 minute start period (this is not the preferred solution but the least code change, for now)
 runners_per_wave = num_runners // num_waves
 wave_start_times = np.array([i * wave_intervals for i in range(num_waves)])
@@ -128,7 +128,7 @@ runners_df = pd.DataFrame({
 })
 
 # Read GPX file
-route_coords = load_gpx_route("../gpxfiles/Course_Marathon_Eindhoven_2024_full.gpx")
+route_coords = load_gpx_route("../temp/Course_Marathon_Eindhoven_2025_full_fixed_density.gpx")
 
 # Get the default start coordinate (the first point of the route)
 default_start_coord = route_coords[0]

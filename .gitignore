@@ -17,4 +17,5 @@ __pycache__/
 
 # Folders
 /temp/**
-
+/presentation_runnersclub/**
+/source/gpxtools/**
