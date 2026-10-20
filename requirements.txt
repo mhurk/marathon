@@ -1,6 +1,6 @@
 ﻿folium==0.17.0
-gpx==0.2.1
 gpxpy==1.6.2
+geopy
 numpy==1.26.4
 pandas
 matplotlib

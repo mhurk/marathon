@@ -1,0 +1,9 @@
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
+ignore = [
+    "E501",  # dense plotting/comment lines run long; keep as a soft target, not a hard failure
+]

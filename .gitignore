@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.ruff_cache/
 
 # Visual Studio Code
 .vscode/**
@@ -14,6 +15,7 @@ __pycache__/
 
 # Miscellaneous files
 */Thumbs.db
+CLAUDE.md
 
 # Folders
 /temp/**
